@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d6350ed92b09652512403476b7c5056f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d6350ed92b09652512403476b7c5056f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d6350ed92b09652512403476b7c5056f = L.map(
+                "map_d6350ed92b09652512403476b7c5056f",
+                {
+                    center: [-37.285137127272726, 142.94608001818185],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fbbabcb11d1418af05d609ced74d65f9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_fbbabcb11d1418af05d609ced74d65f9.addTo(map_d6350ed92b09652512403476b7c5056f);
+        
+    
+            var marker_40276764d31ab2495e072a7fd1ac4425 = L.marker(
+                [-37.2851388, 142.9460947],
+                {}
+            ).addTo(map_d6350ed92b09652512403476b7c5056f);
+        
+    
+            var beautify_icon_1cc0660e4ae8556165dfed4a99a67411 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "black", "borderWidth": 1, "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 1, "textColor": "white"}
+            )
+            marker_40276764d31ab2495e072a7fd1ac4425.setIcon(beautify_icon_1cc0660e4ae8556165dfed4a99a67411);
+        
+    
+        var popup_ea58053803db8efd5bb8c4bdf1d43f15 = L.popup({"autoClose": false, "maxWidth": 300});
+
+        
+            
+                var html_f6958ffbfcc08509e004f1ab47db77d8 = $(`<div id="html_f6958ffbfcc08509e004f1ab47db77d8" style="width: 100.0%; height: 100.0%;">F 7 355 BARKLY ST ARARAT VIC 3377</div>`)[0];
+                popup_ea58053803db8efd5bb8c4bdf1d43f15.setContent(html_f6958ffbfcc08509e004f1ab47db77d8);
+            
+        
+
+        marker_40276764d31ab2495e072a7fd1ac4425.bindPopup(popup_ea58053803db8efd5bb8c4bdf1d43f15)
+        .openPopup();
+
+        
+    
+    
+            var marker_6ced06c09680d08efa882f1f2ce0a90e = L.marker(
+                [-37.2851388, 142.9460947],
+                {}
+            ).addTo(map_d6350ed92b09652512403476b7c5056f);
+        
+    
+            var beautify_icon_c0b9a7ea4d9bf0c265fbd4e3bd8fbd63 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 1, "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 2, "textColor": "blue"}
+            )
+            marker_6ced06c09680d08efa882f1f2ce0a90e.setIcon(beautify_icon_c0b9a7ea4d9bf0c265fbd4e3bd8fbd63);
+        
+    
+        var popup_2400bf982260bf55e87261367e246e9a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6e5fe31dd3c41d5112c00c9f611bcd17 = $(`<div id="html_6e5fe31dd3c41d5112c00c9f611bcd17" style="width: 100.0%; height: 100.0%;">F 6 355 BARKLY ST ARARAT VIC 3377</div>`)[0];
+                popup_2400bf982260bf55e87261367e246e9a.setContent(html_6e5fe31dd3c41d5112c00c9f611bcd17);
+            
+        
+
+        marker_6ced06c09680d08efa882f1f2ce0a90e.bindPopup(popup_2400bf982260bf55e87261367e246e9a)
+        ;
+
+        
+    
+    
+            var marker_b8668c9abc1c1229ba83904761de9de5 = L.marker(
+                [-37.2851388, 142.9460947],
+                {}
+            ).addTo(map_d6350ed92b09652512403476b7c5056f);
+        
+    
+            var beautify_icon_f32da106e95cf0d73ce24eeafc020cd3 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 1, "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 3, "textColor": "blue"}
+            )
+            marker_b8668c9abc1c1229ba83904761de9de5.setIcon(beautify_icon_f32da106e95cf0d73ce24eeafc020cd3);
+        
+    
+        var popup_585f05c054626b45b1da8bc428b49c90 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0fa6ebb1bd1830a1929142cf099524b5 = $(`<div id="html_0fa6ebb1bd1830a1929142cf099524b5" style="width: 100.0%; height: 100.0%;">F 8 355 BARKLY ST ARARAT VIC 3377</div>`)[0];
+                popup_585f05c054626b45b1da8bc428b49c90.setContent(html_0fa6ebb1bd1830a1929142cf099524b5);
+            
+        
+
+        marker_b8668c9abc1c1229ba83904761de9de5.bindPopup(popup_585f05c054626b45b1da8bc428b49c90)
+        ;
+
+        
+    
+    
+            var marker_963284914b8b6f23fb67d299cf79306d = L.marker(
+                [-37.2851388, 142.9460947],
+                {}
+            ).addTo(map_d6350ed92b09652512403476b7c5056f);
+        
+    
+            var beautify_icon_07b96ede8e05a4b6cebe27bbc91b3a19 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 1, "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 4, "textColor": "blue"}
+            )
+            marker_963284914b8b6f23fb67d299cf79306d.setIcon(beautify_icon_07b96ede8e05a4b6cebe27bbc91b3a19);
+        
+    
+        var popup_c568daf56c3f09a7870a3a5bad1e352e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_06fd75a1e1a1c61affc1a8a26a3fc46a = $(`<div id="html_06fd75a1e1a1c61affc1a8a26a3fc46a" style="width: 100.0%; height: 100.0%;">F 9 355 BARKLY ST ARARAT VIC 3377</div>`)[0];
+                popup_c568daf56c3f09a7870a3a5bad1e352e.setContent(html_06fd75a1e1a1c61affc1a8a26a3fc46a);
+            
+        
+
+        marker_963284914b8b6f23fb67d299cf79306d.bindPopup(popup_c568daf56c3f09a7870a3a5bad1e352e)
+        ;
+
+        
+    
+    
+            var marker_edea2972333a05fcc9b7258714368145 = L.marker(
+                [-37.2851388, 142.9460947],
+                {}
+            ).addTo(map_d6350ed92b09652512403476b7c5056f);
+        
+    
+            var beautify_icon_6192288e323e9756bb919e69ed099373 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 1, "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 5, "textColor": "blue"}
+            )
+            marker_edea2972333a05fcc9b7258714368145.setIcon(beautify_icon_6192288e323e9756bb919e69ed099373);
+        
+    
+        var popup_df36bcc70b086c9a145b4540b14bafa3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7450053d8f126e69a07fb9a02f1c5ae9 = $(`<div id="html_7450053d8f126e69a07fb9a02f1c5ae9" style="width: 100.0%; height: 100.0%;">F 10 355 BARKLY ST ARARAT VIC 3377</div>`)[0];
+                popup_df36bcc70b086c9a145b4540b14bafa3.setContent(html_7450053d8f126e69a07fb9a02f1c5ae9);
+            
+        
+
+        marker_edea2972333a05fcc9b7258714368145.bindPopup(popup_df36bcc70b086c9a145b4540b14bafa3)
+        ;
+
+        
+    
+    
+            var marker_4921b5f04d3db7227ff8ce9d1cb37997 = L.marker(
+                [-37.2851388, 142.9460947],
+                {}
+            ).addTo(map_d6350ed92b09652512403476b7c5056f);
+        
+    
+            var beautify_icon_012fce1d393aaabfb06cd68e43e5a8c6 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 1, "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 6, "textColor": "blue"}
+            )
+            marker_4921b5f04d3db7227ff8ce9d1cb37997.setIcon(beautify_icon_012fce1d393aaabfb06cd68e43e5a8c6);
+        
+    
+        var popup_be0753aded08d35089691ae7f66ba7a2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2c42d94de63ec03912e067a100566cec = $(`<div id="html_2c42d94de63ec03912e067a100566cec" style="width: 100.0%; height: 100.0%;">F 1 355 BARKLY ST ARARAT VIC 3377</div>`)[0];
+                popup_be0753aded08d35089691ae7f66ba7a2.setContent(html_2c42d94de63ec03912e067a100566cec);
+            
+        
+
+        marker_4921b5f04d3db7227ff8ce9d1cb37997.bindPopup(popup_be0753aded08d35089691ae7f66ba7a2)
+        ;
+
+        
+    
+    
+            var marker_aa9fcea6d2b5adcf5fbf4fdd7834fae9 = L.marker(
+                [-37.2851388, 142.9460947],
+                {}
+            ).addTo(map_d6350ed92b09652512403476b7c5056f);
+        
+    
+            var beautify_icon_a69004c8a79294b9e849c8bbd00dfd9c = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 1, "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 7, "textColor": "blue"}
+            )
+            marker_aa9fcea6d2b5adcf5fbf4fdd7834fae9.setIcon(beautify_icon_a69004c8a79294b9e849c8bbd00dfd9c);
+        
+    
+        var popup_884ac7ebbef3b9ad3d4a6574dee71f11 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_88b78b95377b1ff58a541ec40c7af4c9 = $(`<div id="html_88b78b95377b1ff58a541ec40c7af4c9" style="width: 100.0%; height: 100.0%;">F 2 355 BARKLY ST ARARAT VIC 3377</div>`)[0];
+                popup_884ac7ebbef3b9ad3d4a6574dee71f11.setContent(html_88b78b95377b1ff58a541ec40c7af4c9);
+            
+        
+
+        marker_aa9fcea6d2b5adcf5fbf4fdd7834fae9.bindPopup(popup_884ac7ebbef3b9ad3d4a6574dee71f11)
+        ;
+
+        
+    
+    
+            var marker_b6e4176caddd4037a55b43100ed3bdd3 = L.marker(
+                [-37.2851388, 142.9460947],
+                {}
+            ).addTo(map_d6350ed92b09652512403476b7c5056f);
+        
+    
+            var beautify_icon_9f367d8ee717652ecebe199fdfb5451b = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 1, "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 8, "textColor": "blue"}
+            )
+            marker_b6e4176caddd4037a55b43100ed3bdd3.setIcon(beautify_icon_9f367d8ee717652ecebe199fdfb5451b);
+        
+    
+        var popup_e4197e01a9122939ca50f42161ec02af = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_52e46a1583784c6bf47ce504d5926f3a = $(`<div id="html_52e46a1583784c6bf47ce504d5926f3a" style="width: 100.0%; height: 100.0%;">F 3 355 BARKLY ST ARARAT VIC 3377</div>`)[0];
+                popup_e4197e01a9122939ca50f42161ec02af.setContent(html_52e46a1583784c6bf47ce504d5926f3a);
+            
+        
+
+        marker_b6e4176caddd4037a55b43100ed3bdd3.bindPopup(popup_e4197e01a9122939ca50f42161ec02af)
+        ;
+
+        
+    
+    
+            var marker_de178fd0f6c62dc5f43b78c801e5e7c3 = L.marker(
+                [-37.2851388, 142.9460947],
+                {}
+            ).addTo(map_d6350ed92b09652512403476b7c5056f);
+        
+    
+            var beautify_icon_20c50879794a096d91b69f4aa5f08e15 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 1, "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 9, "textColor": "blue"}
+            )
+            marker_de178fd0f6c62dc5f43b78c801e5e7c3.setIcon(beautify_icon_20c50879794a096d91b69f4aa5f08e15);
+        
+    
+        var popup_e6507ea97ba8e19fae7cc914b8fa37ee = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_30839861ca607b3922096b961822e84a = $(`<div id="html_30839861ca607b3922096b961822e84a" style="width: 100.0%; height: 100.0%;">F 4 355 BARKLY ST ARARAT VIC 3377</div>`)[0];
+                popup_e6507ea97ba8e19fae7cc914b8fa37ee.setContent(html_30839861ca607b3922096b961822e84a);
+            
+        
+
+        marker_de178fd0f6c62dc5f43b78c801e5e7c3.bindPopup(popup_e6507ea97ba8e19fae7cc914b8fa37ee)
+        ;
+
+        
+    
+    
+            var marker_c74b25a82ef132fa194e012858235051 = L.marker(
+                [-37.2851388, 142.9460947],
+                {}
+            ).addTo(map_d6350ed92b09652512403476b7c5056f);
+        
+    
+            var beautify_icon_3c7b66c921f300aaa47539715ee95c35 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 1, "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 10, "textColor": "blue"}
+            )
+            marker_c74b25a82ef132fa194e012858235051.setIcon(beautify_icon_3c7b66c921f300aaa47539715ee95c35);
+        
+    
+        var popup_4c9b979b6dfe3057c67b0a74de32f67b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_729d0a0a0a6fea8a0109fe986e000593 = $(`<div id="html_729d0a0a0a6fea8a0109fe986e000593" style="width: 100.0%; height: 100.0%;">F 5 355 BARKLY ST ARARAT VIC 3377</div>`)[0];
+                popup_4c9b979b6dfe3057c67b0a74de32f67b.setContent(html_729d0a0a0a6fea8a0109fe986e000593);
+            
+        
+
+        marker_c74b25a82ef132fa194e012858235051.bindPopup(popup_4c9b979b6dfe3057c67b0a74de32f67b)
+        ;
+
+        
+    
+    
+            var marker_3e8cefeaa8381ce319fd673ecb1048d8 = L.marker(
+                [-37.2851204, 142.9459332],
+                {}
+            ).addTo(map_d6350ed92b09652512403476b7c5056f);
+        
+    
+            var beautify_icon_66daee5892099604a9f74c0db9b0a890 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 1, "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 11, "textColor": "blue"}
+            )
+            marker_3e8cefeaa8381ce319fd673ecb1048d8.setIcon(beautify_icon_66daee5892099604a9f74c0db9b0a890);
+        
+    
+        var popup_f32d3b01fb4185946097e0c0be4224f4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cea19a5a12ea48f29f743e0763771a17 = $(`<div id="html_cea19a5a12ea48f29f743e0763771a17" style="width: 100.0%; height: 100.0%;">353 BARKLY ST ARARAT VIC 3377</div>`)[0];
+                popup_f32d3b01fb4185946097e0c0be4224f4.setContent(html_cea19a5a12ea48f29f743e0763771a17);
+            
+        
+
+        marker_3e8cefeaa8381ce319fd673ecb1048d8.bindPopup(popup_f32d3b01fb4185946097e0c0be4224f4)
+        ;
+
+        
+    
+    
+            ant_path_d569c5980573cf54ec9978c252e71263 = L.polyline.antPath(
+              [[-37.2851388, 142.9460947], [-37.2851388, 142.9460947], [-37.2851388, 142.9460947], [-37.2851388, 142.9460947], [-37.2851388, 142.9460947], [-37.2851388, 142.9460947], [-37.2851388, 142.9460947], [-37.2851388, 142.9460947], [-37.2851388, 142.9460947], [-37.2851388, 142.9460947], [-37.2851204, 142.9459332]],
+              {"bubblingMouseEvents": true, "color": "#0000FF", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_d6350ed92b09652512403476b7c5056f);
+        
+</script>
+</html>
