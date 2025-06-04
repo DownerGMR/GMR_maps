@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_44d8248f12ccb88228e127b6fb4aa878 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_44d8248f12ccb88228e127b6fb4aa878" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_44d8248f12ccb88228e127b6fb4aa878 = L.map(
+                "map_44d8248f12ccb88228e127b6fb4aa878",
+                {
+                    center: [-38.14739681428572, 144.36122921428574],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5b85d46a9f82b4f298e837734fb8e034 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5b85d46a9f82b4f298e837734fb8e034.addTo(map_44d8248f12ccb88228e127b6fb4aa878);
+        
+    
+            var marker_378784d3e6c6e1652aef109c9eb9dbbe = L.marker(
+                [-38.1478182, 144.3619158],
+                {}
+            ).addTo(map_44d8248f12ccb88228e127b6fb4aa878);
+        
+    
+            var beautify_icon_e399300e83a1eb3c8c8917aa9f57d501 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "green", "borderColor": "black", "borderWidth": 1, "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 1, "textColor": "white"}
+            )
+            marker_378784d3e6c6e1652aef109c9eb9dbbe.setIcon(beautify_icon_e399300e83a1eb3c8c8917aa9f57d501);
+        
+    
+        var popup_312745312f0066af3c1611b6c1b34cc6 = L.popup({"autoClose": false, "maxWidth": 300});
+
+        
+            
+                var html_4dab1a6ba599fab9f2c931f461869e8b = $(`<div id="html_4dab1a6ba599fab9f2c931f461869e8b" style="width: 100.0%; height: 100.0%;">68-72 MALOP ST GEELONG VIC 3220</div>`)[0];
+                popup_312745312f0066af3c1611b6c1b34cc6.setContent(html_4dab1a6ba599fab9f2c931f461869e8b);
+            
+        
+
+        marker_378784d3e6c6e1652aef109c9eb9dbbe.bindPopup(popup_312745312f0066af3c1611b6c1b34cc6)
+        .openPopup();
+
+        
+    
+    
+            var marker_3b76d6c4dd85e509821b2d897e52f5c0 = L.marker(
+                [-38.1478182, 144.3619158],
+                {}
+            ).addTo(map_44d8248f12ccb88228e127b6fb4aa878);
+        
+    
+            var beautify_icon_6cb7b379ac1cb244958ed57b2d250caa = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 1, "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 2, "textColor": "blue"}
+            )
+            marker_3b76d6c4dd85e509821b2d897e52f5c0.setIcon(beautify_icon_6cb7b379ac1cb244958ed57b2d250caa);
+        
+    
+        var popup_ed68d94e182a706e5bdbe1af31422e97 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d118b0332ee3e976749ad50f0c3207ec = $(`<div id="html_d118b0332ee3e976749ad50f0c3207ec" style="width: 100.0%; height: 100.0%;">64-66 MALOP ST GEELONG VIC 3220</div>`)[0];
+                popup_ed68d94e182a706e5bdbe1af31422e97.setContent(html_d118b0332ee3e976749ad50f0c3207ec);
+            
+        
+
+        marker_3b76d6c4dd85e509821b2d897e52f5c0.bindPopup(popup_ed68d94e182a706e5bdbe1af31422e97)
+        ;
+
+        
+    
+    
+            var marker_78f9fa25d402be224d00a1279534e1ad = L.marker(
+                [-38.14786429999999, 144.3636816],
+                {}
+            ).addTo(map_44d8248f12ccb88228e127b6fb4aa878);
+        
+    
+            var beautify_icon_1402214aa1079ed43ab520705302ce2c = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 1, "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 3, "textColor": "blue"}
+            )
+            marker_78f9fa25d402be224d00a1279534e1ad.setIcon(beautify_icon_1402214aa1079ed43ab520705302ce2c);
+        
+    
+        var popup_3bc778f9ad4efae1a044c2e53108810b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0f99dd80188946618144ddb302b18c38 = $(`<div id="html_0f99dd80188946618144ddb302b18c38" style="width: 100.0%; height: 100.0%;">F 119 UNKNOWN HOUSE NUMBER MALOP ST GEELONG VIC 3220</div>`)[0];
+                popup_3bc778f9ad4efae1a044c2e53108810b.setContent(html_0f99dd80188946618144ddb302b18c38);
+            
+        
+
+        marker_78f9fa25d402be224d00a1279534e1ad.bindPopup(popup_3bc778f9ad4efae1a044c2e53108810b)
+        ;
+
+        
+    
+    
+            var marker_e077f6dbf41e109d4d1519084f6eb3c8 = L.marker(
+                [-38.1479872, 144.3616839],
+                {}
+            ).addTo(map_44d8248f12ccb88228e127b6fb4aa878);
+        
+    
+            var beautify_icon_c5875ca36b967c5c07d79f85bfc5fbac = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 1, "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 4, "textColor": "blue"}
+            )
+            marker_e077f6dbf41e109d4d1519084f6eb3c8.setIcon(beautify_icon_c5875ca36b967c5c07d79f85bfc5fbac);
+        
+    
+        var popup_78702ff73f8b532eccc4ac901788691b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ec3a1c29021ec527017267d4ea961695 = $(`<div id="html_ec3a1c29021ec527017267d4ea961695" style="width: 100.0%; height: 100.0%;">MARKET SQUARE SHOP 2 L 1 54 MALOP ST GEELONG VIC 3220</div>`)[0];
+                popup_78702ff73f8b532eccc4ac901788691b.setContent(html_ec3a1c29021ec527017267d4ea961695);
+            
+        
+
+        marker_e077f6dbf41e109d4d1519084f6eb3c8.bindPopup(popup_78702ff73f8b532eccc4ac901788691b)
+        ;
+
+        
+    
+    
+            var marker_9fda1365db1a75e24c29a025807e35ec = L.marker(
+                [-38.1462375, 144.3588004],
+                {}
+            ).addTo(map_44d8248f12ccb88228e127b6fb4aa878);
+        
+    
+            var beautify_icon_2caaddeca5b4fe406587beb6b36d5772 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 1, "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 5, "textColor": "blue"}
+            )
+            marker_9fda1365db1a75e24c29a025807e35ec.setIcon(beautify_icon_2caaddeca5b4fe406587beb6b36d5772);
+        
+    
+        var popup_1811276449ea94a63872d9787f89e671 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9f81fcf5b15fd8aeba14a87025340cba = $(`<div id="html_9f81fcf5b15fd8aeba14a87025340cba" style="width: 100.0%; height: 100.0%;">SHOP 7 AT MARKET SQUARE SHOPS F 1 7 MALOP ST GEELONG VIC</div>`)[0];
+                popup_1811276449ea94a63872d9787f89e671.setContent(html_9f81fcf5b15fd8aeba14a87025340cba);
+            
+        
+
+        marker_9fda1365db1a75e24c29a025807e35ec.bindPopup(popup_1811276449ea94a63872d9787f89e671)
+        ;
+
+        
+    
+    
+            var marker_c435b1eb7575d03e62d45640816ef4b8 = L.marker(
+                [-38.1462341, 144.3586912],
+                {}
+            ).addTo(map_44d8248f12ccb88228e127b6fb4aa878);
+        
+    
+            var beautify_icon_ea794f56b4896e5d56ed0469b44dc174 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 1, "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 6, "textColor": "blue"}
+            )
+            marker_c435b1eb7575d03e62d45640816ef4b8.setIcon(beautify_icon_ea794f56b4896e5d56ed0469b44dc174);
+        
+    
+        var popup_b4926d8e67347db900285d08b8b2c2fb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e3533548a6dea599584189b1460e9207 = $(`<div id="html_e3533548a6dea599584189b1460e9207" style="width: 100.0%; height: 100.0%;">1F MALOP ST GEELONG VIC 3220</div>`)[0];
+                popup_b4926d8e67347db900285d08b8b2c2fb.setContent(html_e3533548a6dea599584189b1460e9207);
+            
+        
+
+        marker_c435b1eb7575d03e62d45640816ef4b8.bindPopup(popup_b4926d8e67347db900285d08b8b2c2fb)
+        ;
+
+        
+    
+    
+            var marker_e2331383c76ebd406a05283f28641e47 = L.marker(
+                [-38.1478182, 144.3619158],
+                {}
+            ).addTo(map_44d8248f12ccb88228e127b6fb4aa878);
+        
+    
+            var beautify_icon_9e60f0e5d77229a9758f90df4c8d2278 = new L.BeautifyIcon.icon(
+                {"backgroundColor": "white", "borderColor": "black", "borderWidth": 1, "innerIconStyle": "margin-top:0px;", "isAlphaNumericIcon": true, "spin": false, "text": 7, "textColor": "blue"}
+            )
+            marker_e2331383c76ebd406a05283f28641e47.setIcon(beautify_icon_9e60f0e5d77229a9758f90df4c8d2278);
+        
+    
+        var popup_8d8703e3fc718c5159e80201f5f0f29a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_aab463648a5e1eaab4807af94934e938 = $(`<div id="html_aab463648a5e1eaab4807af94934e938" style="width: 100.0%; height: 100.0%;">SHOP 6 94 MALOP ST GEELONG VIC 3220</div>`)[0];
+                popup_8d8703e3fc718c5159e80201f5f0f29a.setContent(html_aab463648a5e1eaab4807af94934e938);
+            
+        
+
+        marker_e2331383c76ebd406a05283f28641e47.bindPopup(popup_8d8703e3fc718c5159e80201f5f0f29a)
+        ;
+
+        
+    
+    
+            ant_path_4d05cd3df64b12bfed8d235c801c7df4 = L.polyline.antPath(
+              [[-38.1478182, 144.3619158], [-38.1478182, 144.3619158], [-38.14786429999999, 144.3636816], [-38.1479872, 144.3616839], [-38.1462375, 144.3588004], [-38.1462341, 144.3586912], [-38.1478182, 144.3619158]],
+              {"bubblingMouseEvents": true, "color": "#0000FF", "dashArray": [10, 20], "dashOffset": null, "delay": 1000, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.5, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_44d8248f12ccb88228e127b6fb4aa878);
+        
+    
+            var locate_control_75c181f5db98a5c0c27779024fe2ae92 = L.control.locate(
+                {}
+            ).addTo(map_44d8248f12ccb88228e127b6fb4aa878);
+            
+        
+    
+            var locate_control_27a390e46e8cabfc00bb7658300b5b2d = L.control.locate(
+                {}
+            ).addTo(map_44d8248f12ccb88228e127b6fb4aa878);
+            
+                locate_control_27a390e46e8cabfc00bb7658300b5b2d.start();
+            
+        
+</script>
+</html>
